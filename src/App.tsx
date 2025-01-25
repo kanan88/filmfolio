@@ -1,8 +1,22 @@
+import Search from "./components/Search";
+
 const App = () => {
   return (
-    <>
-      <h1 className="font-bold underline text-3xl">Hello world!</h1>
-    </>
+    <main>
+      <div className="pattern" />
+
+      <div className="wrapper">
+        <header>
+          <img src="/hero.png" alt="Hero Banner" />
+          <h1>
+            Find <span className="text-gradient">Movies</span> You'll Enjoy
+            Without the Hassle.
+          </h1>
+        </header>
+
+        <Search />
+      </div>
+    </main>
   );
 };
 
