@@ -4,6 +4,7 @@ import Spinner from "./components/Spinner";
 import MovieCard, { type Movie } from "./components/MovieCard";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
+import { Analytics } from "@vercel/analytics/react";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -138,6 +139,7 @@ const App = () => {
           )}
         </section>
       </div>
+      <Analytics />
     </main>
   );
 };
